@@ -207,6 +207,11 @@
             object-fit: cover;
         }
 
+        .project-card .contain-img {
+            object-fit: contain;
+            padding: 10px;
+        }
+
         .project-card .project-content {
             padding: 1.5rem;
         }
