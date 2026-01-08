@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Lorand Dallos - Digital Portfolio">
-    <title>Lorand Dallos - Portfolio</title>
-    <link rel="icon" type="image/png" href="assets/maxle.png">
+    <meta name="description" content="Loránd Dallos - Digital Portfolio">
+    <title>Loránd Dallos - Portfolio</title>
+    <link rel="icon" type="image/png" href="assets/Lfav.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav>
         <div class="container">
-            <div class="logo">Lorand Dallos</div>
+            <div class="logo">Loránd Dallos</div>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -25,8 +26,9 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <h1>Hi, I'm Lorand Dallos</h1>
+        <h1>Hi, I'm Loránd Dallos</h1>
         <p>Data Scientist | Software Engineer</p>
+        <p style="color: red;"> ⚠️SITE IS WIP⚠️</p>
         <a href="#projects" class="cta-button">View My Work</a>
     </section>
 
@@ -35,12 +37,97 @@
         <div class="container">
             <h2>About Me</h2>
             <div class="about-content">
-                <img src="[your-profile-image-url]" alt="Lorand Dallos">
+                <img src="assets/lori-casual.jpeg" alt="Loránd Dallos">
                 <p>
-                    [Write a brief introduction about yourself. Include your background, what you're passionate about, 
-                    your professional journey, and what drives you. This is your chance to tell your story and make 
-                    a personal connection with visitors. Keep it authentic and engaging.]
+                    MSc Computer Science student with practical experience in building AI-driven software and Python development. 
+                    Proven ability to handle tasks with autonomy, from developing ERP modules for Odoo to building and training machine learning models.
                 </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">03/2025 - 08/2025</div>
+                    <div class="timeline-content">
+                        <h3>Junior Python Developer</h3>
+                        <h4>OdooTech Zrt.</h4>
+                        <ul>
+                            <li>Developed and shipped custom Python modules for live Odoo ERP systems.</li>
+                            <li>Collaborated with clients to gather requirements and translate business needs into technical specifications.</li>
+                            <li>Gained experience in writing Python code, XML, and HTML.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">09/2024 - 06/2025</div>
+                    <div class="timeline-content">
+                        <h3>Research Intern (AI)</h3>
+                        <h4>Eötvös Loránd Tudományegyetem</h4>
+                        <ul>
+                            <li>Participated in a research project at the ELTE Department of Artificial Intelligence.</li>
+                            <li>Collaborated with biologists from Semmelweis University of Medical Sciences.</li>
+                            <li>Trained models for keypoint estimation on rat bodies to classify health based on movement.</li>
+                            <li>Developed a Python-based application for thesis work to automate research data analysis.</li>
+                            <li>Utilized libraries: Scikit-learn, Pandas, TensorFlow, OpenCV.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">07/2024 - 09/2024</div>
+                    <div class="timeline-content">
+                        <h3>Informatics Teacher (Seasonal)</h3>
+                        <h4>Funside Egyesület</h4>
+                        <ul>
+                            <li>Focused on AI programming, 3D printing, and Arduino.</li>
+                            <li>Guided participants through pixel/voxel design, circuits, and coding.</li>
+                            <li>Worked on facial filters, emotion recognition, and machine learning classification projects.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">09/2025 - present</div>
+                    <div class="timeline-content">
+                        <h3>Computer Science (MSc)</h3>
+                        <h4>Albert Ludwigs Universität Freiburg</h4>
+                        <p>Freiburg im Breisgau</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">09/2022 - 07/2025</div>
+                    <div class="timeline-content">
+                        <h3>Computer Science (BSc)</h3>
+                        <h4>Eötvös Loránd Tudományegyetem</h4>
+                        <p>Budapest</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">09/2018 - 07/2022</div>
+                    <div class="timeline-content">
+                        <h3>High school leaving certificate</h3>
+                        <h4>Ady Endre Elméleti Líceum</h4>
+                        <p>Oradea</p>
+                        <ul class="grades-list">
+                            <li>Mathematics: 9.80</li>
+                            <li>Informatics: 9.20</li>
+                            <li>Hungarian: 9.40</li>
+                            <li>Romanian: 6.00</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -51,30 +138,29 @@
             <h2>My Skills</h2>
             <div class="skills-grid">
                 <div class="skill-card">
-                    <h3>[Skill Category 1]</h3>
+                    <h3>Languages</h3>
                     <ul>
-                        <li>[Skill 1]</li>
-                        <li>[Skill 2]</li>
-                        <li>[Skill 3]</li>
-                        <li>[Skill 4]</li>
+                        <li>Hungarian (Native)</li>
+                        <li>English (C1)</li>
+                        <li>Romanian (B2)</li>
                     </ul>
                 </div>
                 <div class="skill-card">
-                    <h3>[Skill Category 2]</h3>
+                    <h3>IT Skills</h3>
                     <ul>
-                        <li>[Skill 1]</li>
-                        <li>[Skill 2]</li>
-                        <li>[Skill 3]</li>
-                        <li>[Skill 4]</li>
+                        <li>Scrum</li>
+                        <li>UML diagrams</li>
+                        <li>Structograms</li>
+                        <li>Version control</li>
+                        <li>Microsoft Office</li>
                     </ul>
                 </div>
                 <div class="skill-card">
-                    <h3>[Skill Category 3]</h3>
+                    <h3>Programming</h3>
                     <ul>
-                        <li>[Skill 1]</li>
-                        <li>[Skill 2]</li>
-                        <li>[Skill 3]</li>
-                        <li>[Skill 4]</li>
+                        <li>Python, C#, C++</li>
+                        <li>C, PHP, Javascript</li>
+                        <li>Java, SQL</li>
                     </ul>
                 </div>
             </div>
@@ -96,7 +182,10 @@
                             <span class="tag">Dart</span>
                             <span class="tag">Firebase</span>
                         </div>
-                        <a href="https://itslawrey-flutter-demos.web.app" target="_blank">View Project →</a>
+                        <div class="project-links">
+                            <a href="https://itslawrey-flutter-demos.web.app" target="_blank">View Project</a>
+                            <a href="#" target="_blank">View Code</a>
+                        </div>
                     </div>
                 </div>
 
@@ -111,21 +200,41 @@
                             <span class="tag">Firebase</span>
                             <span class="tag">API</span>
                         </div>
-                        <a href="https://itslawrey-binance-tracker.web.app" target="_blank">View Project →</a>
+                        <div class="project-links">
+                            <a href="https://itslawrey-binance-tracker.web.app" target="_blank">View Project</a>
+                            <a href="#" target="_blank">View Code</a>
+                        </div>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <img src="[project-3-image-url]" alt="[Project 3 Name]">
+                    <img src="assets/motion_analysis.png" alt="Motion Analysis Thesis">
                     <div class="project-content">
-                        <h3>[Project 3 Name]</h3>
-                        <p>[Brief description of the project, what it does, and what problem it solves.]</p>
+                        <h3>Motion Analysis Thesis</h3>
+                        <p>Trained models for keypoint estimation on rat bodies to classify health based on movement for thesis work.</p>
                         <div class="tags">
-                            <span class="tag">[Technology 1]</span>
-                            <span class="tag">[Technology 2]</span>
-                            <span class="tag">[Technology 3]</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">TensorFlow</span>
+                            <span class="tag">OpenCV</span>
                         </div>
-                        <a href="[project-3-link]" target="_blank">View Project →</a>
+                        <div class="project-links">
+                            <a href="#" target="_blank">View Project</a>
+                            <a href="#" class="disabled-link">Closed Source</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="" alt="Blackhole">
+                    <div class="project-content">
+                        <h3>Blackhole Strategy Game</h3>
+                        <p>Strategy game where players control rockets and try to get their fleet into a blackhole.</p>
+                        <div class="tags">
+                            <span class="tag">C#</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank">View Project</a>
+                            <a href="#" target="_blank">View Code</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -137,12 +246,11 @@
         <div class="container">
             <h2>Get In Touch</h2>
             <div class="contact-content">
-                <p>[Add a brief message encouraging visitors to reach out to you]</p>
+                <p>Feel free to reach out for collaborations or opportunities!</p>
                 <div class="contact-links">
-                    <a href="mailto:[your-email@example.com]">Email</a>
-                    <a href="[your-linkedin-url]" target="_blank">LinkedIn</a>
-                    <a href="[your-github-url]" target="_blank">GitHub</a>
-                    <a href="[your-twitter-url]" target="_blank">Twitter</a>
+                    <a href="mailto:lorand.dallos@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/lorand-dallos/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/itsLawrey" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
                 </div>
             </div>
         </div>

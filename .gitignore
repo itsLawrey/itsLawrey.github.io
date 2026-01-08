@@ -4,3 +4,13 @@ bower_components/
 
 build/
 dist/
+
+# Firebase configuration (contains project IDs)
+lib/firebase_options.dart
+
+# Environment variables
+.env
+*.env
+
+# Secrets & API Keys
+secrets.json
