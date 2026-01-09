@@ -1,0 +1,8 @@
+# robots.txt for https://itslawrey.github.io/
+# This file tells search engine crawlers which pages they can access
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://itslawrey.github.io/sitemap.xml

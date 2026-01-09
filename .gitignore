@@ -14,3 +14,5 @@ lib/firebase_options.dart
 
 # Secrets & API Keys
 secrets.json
+
+CONTACT_FORM_SETUP.md
