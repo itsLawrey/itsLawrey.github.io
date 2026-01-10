@@ -44,7 +44,6 @@
         <section class="hero">
             <h1>Hi, I'm Loránd Dallos</h1>
             <p>Data Scientist | Software Engineer</p>
-            <p style="color: red;"> ⚠️SITE IS WIP⚠️</p>
             <a href="#projects" class="cta-button">View My Work</a>
         </section>
 
@@ -192,7 +191,7 @@
                 <div class="project-card">
                     <img src="assets/maxle.png" alt="Maxle" class="contain-img">
                     <div class="project-content">
-                        <h3>Maxle</h3>
+                        <h3>Maxle - Gym Tracker</h3>
                         <p>Maxle is a flutter application that allows users to manage their gym progress.</p>
                         <div class="tags">
                             <span class="tag">Flutter</span>
@@ -228,8 +227,8 @@
                     </div>
                 </div>
 
-                <div class="project-card">
-                    <img src="assets/motion_analysis.png" alt="Motion Analysis Thesis">
+                <div class="project-card" id="thesis-project">
+                    <img src="assets/rat.png" alt="Motion Analysis Thesis">
                     <div class="project-content">
                         <h3>Motion Analysis Thesis</h3>
                         <p>Trained models for keypoint estimation on rat bodies to classify health based on movement
@@ -237,26 +236,31 @@
                             thesis work.</p>
                         <div class="tags">
                             <span class="tag">Python</span>
+                            <span class="tag">YOLOv8</span>
                             <span class="tag">TensorFlow</span>
                             <span class="tag">OpenCV</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" target="_blank" rel="noopener noreferrer">View Project</a>
+                            <a href="thesis/index.html" rel="noopener noreferrer">Read Thesis</a>
                             <a href="#" class="disabled-link">Closed Source</a>
                         </div>
                     </div>
                 </div>
                 <div class="project-card">
-                    <img src="" alt="Blackhole">
+                    <img src="assets/Black.bmp" alt="Blackhole">
                     <div class="project-content">
                         <h3>Blackhole Strategy Game</h3>
                         <p>Strategy game where players control rockets and try to get their fleet into a blackhole.
                         </p>
                         <div class="tags">
                             <span class="tag">C#</span>
+                            <span class="tag">Blazor</span>
+                            <span class="tag">WASM</span>
+                            <span class="tag">Firebase</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" target="_blank" rel="noopener noreferrer">View Project</a>
+                            <a href="https://itslawrey-blackhole.web.app/" target="_blank"
+                                rel="noopener noreferrer">View Project</a>
                             <a href="#" target="_blank" rel="noopener noreferrer">View Code</a>
                         </div>
                     </div>
@@ -329,13 +333,13 @@
                     </div>
 
                     <!-- Honeypot field for spam protection (hidden from users) -->
-                    <input type="hidden" name="honeypot" id="honeypot" style="display: none;">
+                    <input type="hidden" name="honeypot" id="honeypot">
 
                     <div class="form-actions">
                         <button type="button" id="cancelBtn" class="btn-secondary">Cancel</button>
                         <button type="submit" id="submitBtn" class="btn-primary">
                             <span class="btn-text">Send Message</span>
-                            <span class="btn-loading" style="display: none;">
+                            <span class="btn-loading hidden">
                                 <span class="spinner"></span> Sending...
                             </span>
                         </button>
@@ -344,7 +348,7 @@
                     <div id="formStatus" class="form-status"></div>
                 </form>
             </div>
-            <div class="progress-bar-container" id="progressBarContainer" style="display: none;">
+            <div class="progress-bar-container hidden" id="progressBarContainer">
                 <div class="progress-bar" id="progressBar"></div>
             </div>
         </div>

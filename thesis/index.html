@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soterats Thesis - Loránd Dallos</title>
+    <link rel="icon" type="image/png" href="../assets/Lfav.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="thesis-container">
+        <div class="navigation-bar">
+            <a href="../index.html#thesis-project" class="back-btn">
+                <i class="fas fa-arrow-left"></i> Back to Portfolio
+            </a>
+            <a href="#" onclick="openDownloadModal(event)" class="cta-button" id="topDownloadBtn"
+                style="padding: 0.5rem 1rem; font-size: 0.9rem;">
+                <i class="fas fa-download"></i> Download PDF
+            </a>
+        </div>
+
+        <header class="thesis-header">
+            <h1 class="thesis-title">Automatic Annotation for Pose Estimation and Movement Velocity Measurement on a
+                Database of Spinal Cord Injured Rats</h1>
+            <p class="subtitle">BSc in Computer Science Thesis - Eötvös Loránd University</p>
+        </header>
+
+        <div class="content-row">
+            <section class="abstract-section">
+                <h3 class="abstract-title">Abstract</h3>
+                <p>
+                    Medical and pharmaceutical research at <strong>Semmelweis University</strong> requires the analysis
+                    of leg movements in rats following spinal cord injury to evaluate rehabilitation effectiveness.
+                    Traditionally, this involves manual annotation of thousands of video frames. This would be a
+                    monotonous, expensive,
+                    and time-consuming process. This thesis presents <strong>Soterats</strong>, an automated system
+                    designed to replace human annotation using deep learning and machine vision.
+                </p>
+                <br>
+                <p>
+                    The system utilizes the <strong>YOLOv8-pose</strong> estimation model to track 13 specific keypoints
+                    and the <strong>Segment Anything Model (SAM)</strong> to generate binary masks. A novel
+                    <strong>synthetic skeleton-based correction</strong> algorithm improves toe-point accuracy, while
+                    <strong>optical flow</strong> filters out frames with insufficient movement. The application
+                    generates normalized time-series data of leg movements to classify subjects into five categories
+                    ranging from "crippled" to "healthy."
+                </p>
+                <br>
+                <p>
+                    The resulting application features a <strong>Streamlit-based graphical interface</strong>, allowing
+                    researchers without extensive IT backgrounds to train custom models on as little as 10% of their
+                    dataset and perform high-throughput automated analysis. This significantly increases research
+                    efficiency and provides objective, reproducible metrics for biological studies.
+                </p>
+            </section>
+
+            <div class="notes-column">
+                <div class="language-note">
+                    <i class="fas fa-info-circle"></i>
+                    <strong>Note regarding language:</strong>
+                    <br>
+                    The primary thesis was submitted in 2025 at the <strong>Faculty of Informatics, ELTE</strong>. The
+                    original documentation and interface utilize a mix of English and Hungarian terminology.
+                </div>
+
+                <div class="application-note">
+                    <i class="fas fa-info-circle"></i>
+                    <strong>Note regarding application:</strong>
+                    <br>
+                    The application is currently not available for download, as it is considered proprietary software
+                    for
+                    medical research.
+                </div>
+            </div>
+        </div>
+
+        <section class="pdf-viewer-section">
+            <h3 class="abstract-title">Full Thesis Document</h3>
+
+            <div class="language-switcher">
+                <button class="lang-btn active" onclick="switchLanguage('en')">English Translation</button>
+                <button class="lang-btn" onclick="switchLanguage('hu')">Hungarian (Original)</button>
+            </div>
+
+            <div class="pdf-container">
+                <object id="pdfObject" data="thesis-lorand-rat-movement_hungarian.pdf" type="application/pdf"
+                    width="100%" height="800px">
+                    <iframe id="pdfIframe" src="thesis-lorand-rat-movement_hungarian.pdf" width="100%" height="800px"
+                        style="border: none;">
+                    </iframe>
+                </object>
+            </div>
+
+            <div class="download-section">
+                <p>Having trouble viewing the PDF?</p>
+                <br>
+                <a href="#" onclick="openDownloadModal(event)" class="cta-button" id="bottomDownloadBtn"
+                    style="padding: 0.5rem 1rem; font-size: 0.9rem;">
+                    <i class="fas fa-download"></i> Download PDF
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Lorand Dallos. All rights reserved.</p>
+    </footer>
+
+    <div id="downloadModal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeDownloadModal()">&times;</button>
+            <div class="download-options">
+                <div class="download-card" onclick="downloadPdf('en')">
+                    <h4>English Version</h4>
+                    <p>Translated for international audience</p>
+                    <i class="fas fa-file-pdf fa-2x"></i>
+                </div>
+                <div class="download-card" onclick="downloadPdf('hu')">
+                    <h4>Hungarian Version</h4>
+                    <p>Original language</p>
+                    <i class="fas fa-file-pdf fa-2x"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

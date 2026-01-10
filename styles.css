@@ -920,3 +920,8 @@
             }
         }
 
+        /* Utility Classes */
+        .hidden {
+            display: none;
+        }
+
