@@ -121,6 +121,7 @@ body {
     font-family: inherit;
     font-weight: 500;
     transition: all 0.3s ease;
+    text-align: center;
 }
 
 .lang-btn:hover {
@@ -170,6 +171,7 @@ a.cta-button:visited {
     border-radius: 4px; /* Ensure uniform look */
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 0.5rem;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
@@ -231,20 +233,39 @@ a.cta-button:focus {
 
 .modal-close {
     position: absolute;
-    top: 1rem;
-    right: 1rem;
+    top: 15px;
+    right: 15px;
     background: transparent;
     border: none;
     color: var(--text-color);
-    font-size: 1.5rem;
+    font-size: 2rem;
     cursor: pointer;
-    padding: 0.5rem;
-    line-height: 1;
-    transition: color 0.3s ease;
+    padding: 0;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background-color 0.3s, transform 0.3s, color 0.3s;
+    z-index: 10;
 }
 
 .modal-close:hover {
+    background-color: rgba(123, 237, 159, 0.1);
     color: var(--primary-color);
+    transform: rotate(90deg);
+}
+
+.modal-close:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+.modal-spacer {
+    height: 20px;
+    width: 100%;
+    flex-shrink: 0;
 }
 
 .download-options {

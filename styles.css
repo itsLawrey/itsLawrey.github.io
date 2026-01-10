@@ -155,6 +155,7 @@
             text-decoration: none;
             border-radius: 5px;
             font-weight: bold;
+            text-align: center;
             transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
         }
 
@@ -256,15 +257,15 @@
         .timeline-item::after {
             content: '';
             position: absolute;
-            width: 16px;
-            height: 16px;
+            width: 20px;
+            height: 20px;
             right: 100%;
-            background-color: #2d2d2d;
-            border: 4px solid #7bed9f;
+            background-color: #7bed9f;
+            border: none;
             top: 20px;
-            border-radius: 50%;
+            border-radius: 40%;
             z-index: 1;
-            left: -38px;
+            left: -41px;
         }
 
         .timeline-date {
@@ -429,6 +430,7 @@
             border-radius: 5px;
             transition: all 0.3s ease;
             font-size: 0.9rem;
+            text-align: center;
         }
 
         .project-card a:hover {
@@ -532,6 +534,33 @@
 
             .projects-grid {
                 grid-template-columns: 1fr;
+            }
+
+            /* Mobile Modal Adjustments */
+            .modal-container {
+                width: 90%;
+                max-height: 85vh;
+            }
+
+            .modal-header, .modal-body {
+                padding: 1.5rem;
+            }
+
+            .modal-header h2 {
+                font-size: 1.5rem;
+            }
+
+            /* Mobile Timeline Adjustments */
+            .timeline::after {
+                left: 10px;
+            }
+
+            .timeline-item {
+                margin-left: 30px;
+            }
+
+            .timeline-item::after {
+                left: -31px;
             }
         }
 
@@ -793,10 +822,12 @@
             border-radius: 8px;
             font-size: 1rem;
             font-weight: 600;
-            cursor: pointer;
             transition: all 0.3s ease;
             border: none;
             position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .btn-primary {
