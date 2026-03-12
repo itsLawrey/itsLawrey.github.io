@@ -110,7 +110,7 @@
             display: flex;
             gap: 0;
             margin-top: 60px;
-            min-height: 600px;
+            height: calc(100vh - 60px);
             align-items: center;
             padding: 0;
         }
@@ -347,10 +347,46 @@
             background-color: #1a1a1a;
         }
 
+        .project-filters {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            background-color: transparent;
+            color: #b8b8b8;
+            border: 2px solid #3d5a48;
+            padding: 0.5rem 1.5rem;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .filter-btn:hover {
+            color: #7bed9f;
+            border-color: #7bed9f;
+        }
+
+        .filter-btn.active {
+            background-color: #7bed9f;
+            color: #1a1a1a;
+            border-color: #7bed9f;
+        }
+
         .projects-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             gap: 2rem;
+        }
+        
+        /* Hide class for filtering */
+        .project-card.hide {
+            display: none;
         }
 
         .project-card {
@@ -494,6 +530,11 @@
             border-top: 1px solid #2a2a2a;
         }
 
+        footer a {
+            color: inherit;
+            text-decoration: underline;
+        }
+
         /* Responsive Design */
         @media (max-width: 768px) {
             nav .container {
@@ -509,9 +550,18 @@
                 gap: 1rem;
             }
 
+            /* Tighten horizontal padding across all sections */
+            section {
+                padding: 3rem 1rem;
+            }
+
+            .container {
+                padding: 0 1rem;
+            }
+
             .hero-about-wrapper {
                 flex-direction: column;
-                min-height: auto;
+                height: auto;
                 align-items: stretch;
             }
 
@@ -530,6 +580,7 @@
 
             section h2 {
                 font-size: 2rem;
+                margin-bottom: 2rem;
             }
 
             .projects-grid {
@@ -550,17 +601,17 @@
                 font-size: 1.5rem;
             }
 
-            /* Mobile Timeline Adjustments */
+            /* Mobile Timeline — hide decorations, use full width */
             .timeline::after {
-                left: 10px;
+                display: none;
             }
 
             .timeline-item {
-                margin-left: 30px;
+                margin-left: 0;
             }
 
             .timeline-item::after {
-                left: -31px;
+                display: none;
             }
         }
 
@@ -673,7 +724,7 @@
             background: none;
             border: none;
             color: #e8e8e8;
-            font-size: 2rem;
+            font-size: 1.1rem;
             cursor: pointer;
             padding: 0;
             width: 35px;
@@ -682,6 +733,7 @@
             align-items: center;
             justify-content: center;
             border-radius: 50%;
+            transform-origin: center center;
             transition: background-color 0.3s, transform 0.3s, color 0.3s;
         }
 

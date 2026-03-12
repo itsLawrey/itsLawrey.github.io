@@ -54,7 +54,7 @@
                     <img src="assets/lori-casual.jpeg" alt="Loránd Dallos">
                     <p>
                         MSc Computer Science student with practical experience in building AI-driven software and Python
-                        development. My latest passion is developing flutter apps that help productivity in some way.
+                        development. My latest passion is developing Flutter apps and getting into Linux.
                     </p>
                 </div>
             </div>
@@ -67,7 +67,7 @@
             <h2>Experience</h2>
             <div class="timeline">
                 <div class="timeline-item">
-                    <div class="timeline-date">03/2025 - 08/2025</div>
+                    <div class="timeline-date">03/2025 - 09/2025</div>
                     <div class="timeline-content">
                         <h3>Junior Python Developer</h3>
                         <h4>OdooTech Zrt.</h4>
@@ -187,8 +187,14 @@
     <section id="projects" class="projects">
         <div class="container">
             <h2>My Projects</h2>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="flutter">Flutter</button>
+                <button class="filter-btn" data-filter="ai-ml">AI/ML</button>
+                <button class="filter-btn" data-filter="csharp">C#</button>
+            </div>
             <div class="projects-grid">
-                <div class="project-card">
+                <div class="project-card" data-category="flutter">
                     <img src="assets/maxle.png" alt="Maxle" class="contain-img">
                     <div class="project-content">
                         <h3>Maxle - Gym Tracker</h3>
@@ -200,14 +206,14 @@
                         </div>
                         <div class="project-links">
                             <a href="https://itslawrey-flutter-demos.web.app" target="_blank"
-                                rel="noopener noreferrer">View Project</a>
+                                rel="noopener noreferrer">Try Demo</a>
                             <a href="https://github.com/itsLawrey/flutter-maxle" target="_blank"
-                                rel="noopener noreferrer">View Code</a>
+                                rel="noopener noreferrer">GitHub</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card" data-category="flutter">
                     <img src="assets/Binance_Logo.png" alt="Binance Profit Tracker" class="contain-img">
                     <div class="project-content">
                         <h3>Binance Profit Tracker</h3>
@@ -222,14 +228,14 @@
                         </div>
                         <div class="project-links">
                             <a href="https://itslawrey-binance-tracker.web.app" target="_blank"
-                                rel="noopener noreferrer">View Project</a>
+                                rel="noopener noreferrer">Try Demo</a>
                             <a href="https://github.com/itsLawrey/flutter-binance_track" target="_blank"
-                                rel="noopener noreferrer">View Code</a>
+                                rel="noopener noreferrer">GitHub</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="project-card" id="thesis-project">
+                <div class="project-card" id="thesis-project" data-category="ai-ml">
                     <img src="assets/rat.png" alt="Motion Analysis Thesis">
                     <div class="project-content">
                         <h3>Motion Analysis Thesis</h3>
@@ -248,7 +254,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card" data-category="csharp">
                     <img src="assets/Black.bmp" alt="Blackhole">
                     <div class="project-content">
                         <h3>Blackhole Strategy Game</h3>
@@ -262,13 +268,13 @@
                         </div>
                         <div class="project-links">
                             <a href="https://itslawrey-blackhole.web.app/" target="_blank"
-                                rel="noopener noreferrer">View Project</a>
+                                rel="noopener noreferrer">Try Demo</a>
                             <a href="https://github.com/itsLawrey/blazor-blackhole" target="_blank"
-                                rel="noopener noreferrer">View Code</a>
+                                rel="noopener noreferrer">GitHub</a>
                         </div>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card" data-category="flutter">
                     <img src="assets/sudoku.png" alt="Sudoku">
                     <div class="project-content">
                         <h3>Sudoku</h3>
@@ -281,10 +287,10 @@
                             <span class="tag">Hive</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://itslawrey-sudoku.web.app/" target="_blank" rel="noopener noreferrer">View
-                                Project</a>
+                            <a href="https://itslawrey-sudoku.web.app/" target="_blank"
+                                rel="noopener noreferrer">Try Demo</a>
                             <a href="https://github.com/itsLawrey/flutter-sudoku" target="_blank"
-                                rel="noopener noreferrer">View Code</a>
+                                rel="noopener noreferrer">GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -312,6 +318,8 @@
     <!-- Footer -->
     <footer>
         <p>&copy; 2026 Lorand Dallos. All rights reserved.</p>
+        <a href="https://github.com/itsLawrey/itsLawrey.github.io" target="_blank"
+            rel="noopener noreferrer">About this page</a>
     </footer>
 
     <!-- Contact Form Modal -->
@@ -319,7 +327,7 @@
         <div class="modal-container">
             <div class="modal-header">
                 <h2>Almost done</h2>
-                <button id="closeModalBtn" class="close-btn" aria-label="Close modal">&times;</button>
+                <button id="closeModalBtn" class="close-btn" aria-label="Close modal"><i class="fas fa-xmark"></i></button>
             </div>
             <div class="modal-body">
                 <div class="verification-notice">

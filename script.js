@@ -16,7 +16,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         const targetId = href.substring(1);
         const target = document.getElementById(targetId);
         
-        if (target) {
+        if (targetId === 'home') {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        } else if (target) {
             target.scrollIntoView({
                 behavior: 'smooth',
                 block: 'start'
@@ -440,3 +442,26 @@ if (hamburger) {
         });
     });
 }
+
+// Project Filtering Logic
+const filterBtns = document.querySelectorAll('.filter-btn');
+const projectCards = document.querySelectorAll('.project-card');
+
+filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        // Remove active class from all buttons
+        filterBtns.forEach(b => b.classList.remove('active'));
+        // Add active class to current button
+        btn.classList.add('active');
+
+        const filterValue = btn.getAttribute('data-filter');
+
+        projectCards.forEach(card => {
+            if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+                card.classList.remove('hide');
+            } else {
+                card.classList.add('hide');
+            }
+        });
+    });
+});
