@@ -1,0 +1,99 @@
+/* LangTool subpages (home page and privacy policy) */
+:root {
+    --primary-color: #7bed9f;
+    --text-color: #e6f1ff;
+    --card-bg: #112240;
+}
+
+body {
+    padding-top: 2rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 2rem;
+    width: 100%;
+    flex: 1;
+}
+
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    transition: color 0.3s ease;
+}
+
+.back-btn:hover {
+    color: var(--primary-color);
+}
+
+.page-header {
+    margin-bottom: 2rem;
+}
+
+.page-header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.page-card {
+    background-color: var(--card-bg);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    line-height: 1.7;
+}
+
+.page-card h2 {
+    text-align: left;
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    margin: 1.5rem 0 0.5rem;
+}
+
+.page-card h2:first-child {
+    margin-top: 0;
+}
+
+.page-card ul {
+    padding-left: 1.5rem;
+}
+
+.page-card a {
+    color: var(--primary-color);
+}
+
+.page-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/* Same outlined button as the portfolio's project cards. */
+.page-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.page-links a:hover {
+    background-color: var(--primary-color);
+    color: #1a1a1a;
+}
